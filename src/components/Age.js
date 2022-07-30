@@ -17,7 +17,7 @@ export default function Age(){
     return(
         <div className="container"> 
           <div className="age-div">
-            <p>You are {age} years old</p>
+            <p>You are {age} {age > 1 && "years old"} year old</p>
             <p>You were born in year {dob}</p>
           </div>
           <div className="counter-div"> 

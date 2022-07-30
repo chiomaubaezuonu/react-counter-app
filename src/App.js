@@ -2,13 +2,6 @@ import React from "react";
 import Age from "./components/Age"
 
 function App() {
-
-
-
-
-
-
-  
   return (
     <div className="App">
       <Age />
