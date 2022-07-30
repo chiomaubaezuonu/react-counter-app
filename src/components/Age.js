@@ -17,8 +17,12 @@ export default function Age(){
     return(
         <div className="container"> 
           <div className="age-div">
-            <p>You are {age} {age > 1 && "years old"} year old</p>
-            <p>You were born in year {dob}</p>
+            {/* <p>You are {age} {age > 1 && "years old"} year old</p> */}
+            {<p>You are {age} 
+              {age > 1 ? " years old" : " year old"}
+            </p>
+            }
+            {<p> {age < 0 ? " You will be born in year"  : "You were born in year"} {dob}</p>}
           </div>
           <div className="counter-div"> 
             <button className="add" onClick={increase}>-</button>
